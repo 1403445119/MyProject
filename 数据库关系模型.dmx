@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CTOXML>
+
+<DataModels>
+  <TableCount>5</TableCount>
+  <Count>1</Count>
+</DataModels>
+
+
+<DataModels_item1>
+  <CTVER>43543230</CTVER>
+  <ID>1</ID>
+  <Name>模型1</Name>
+  <CreateDate>2018/6/22 星期五 14:26:24</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>1</OrderNo>
+</DataModels_item1>
+
+
+<DataModels_item1_item0>
+  <Count>5</Count>
+</DataModels_item1_item0>
+
+
+<DataModels_item1_item0_item1>
+  <CTVER>43543230</CTVER>
+  <ID>1</ID>
+  <Name>company_basic</Name>
+  <Caption>客户基础数据</Caption>
+  <CreateDate>2018/6/22 星期五 14:26:28</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>1</OrderNo>
+  <GraphDesc>Left=28.00
+Top=382.00</GraphDesc>
+</DataModels_item1_item0_item1>
+
+
+<DataModels_item1_item0_item1_item0>
+  <Count>7</Count>
+</DataModels_item1_item0_item1_item0>
+
+
+<DataModels_item1_item0_item1_item0_item1>
+  <CTVER>43543230</CTVER>
+  <ID>1</ID>
+  <Name>company_id</Name>
+  <CreateDate>2018/6/22 星期五 14:26:28</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>1</OrderNo>
+  <DisplayName>id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item1_item0_item1>
+
+
+<DataModels_item1_item0_item1_item0_item2>
+  <CTVER>43543230</CTVER>
+  <ID>2</ID>
+  <Name>company_name</Name>
+  <CreateDate>2018/6/22 星期五 14:26:28</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>2</OrderNo>
+  <DisplayName>客户公司名</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item1_item0_item2>
+
+
+<DataModels_item1_item0_item1_item0_item3>
+  <CTVER>43543230</CTVER>
+  <ID>3</ID>
+  <Name>company_path</Name>
+  <CreateDate>2018/6/22 星期五 14:26:28</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>3</OrderNo>
+  <DisplayName>公司地址</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item1_item0_item3>
+
+
+<DataModels_item1_item0_item1_item0_item4>
+  <CTVER>43543230</CTVER>
+  <ID>4</ID>
+  <Name>company_contacts</Name>
+  <CreateDate>2018/6/22 星期五 14:27:32</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>4</OrderNo>
+  <DisplayName>代理人姓名</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item1_item0_item4>
+
+
+<DataModels_item1_item0_item1_item0_item5>
+  <CTVER>43543230</CTVER>
+  <ID>5</ID>
+  <Name>company_tel</Name>
+  <CreateDate>2018/6/22 星期五 14:27:33</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>5</OrderNo>
+  <DisplayName>代理人电话</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item1_item0_item5>
+
+
+<DataModels_item1_item0_item1_item0_item6>
+  <CTVER>43543230</CTVER>
+  <ID>6</ID>
+  <Name>company_pass</Name>
+  <Memo>0为没有1为有</Memo>
+  <CreateDate>2018/6/22 星期五 14:27:34</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>6</OrderNo>
+  <DisplayName>是否有租借</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item1_item0_item6>
+
+
+<DataModels_item1_item0_item1_item0_item7>
+  <CTVER>43543230</CTVER>
+  <ID>7</ID>
+  <Name>company_create_time</Name>
+  <CreateDate>2018/6/22 星期五 14:27:34</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>7</OrderNo>
+  <DisplayName>记录创建时间</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item1_item0_item7>
+
+
+<DataModels_item1_item0_item2>
+  <CTVER>43543230</CTVER>
+  <ID>4</ID>
+  <Name>staff_basic</Name>
+  <Caption>员工表</Caption>
+  <CreateDate>2018/6/22 星期五 14:32:45</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>2</OrderNo>
+  <GraphDesc>Left=66.00
+Top=12.00</GraphDesc>
+</DataModels_item1_item0_item2>
+
+
+<DataModels_item1_item0_item2_item0>
+  <Count>10</Count>
+</DataModels_item1_item0_item2_item0>
+
+
+<DataModels_item1_item0_item2_item0_item1>
+  <CTVER>43543230</CTVER>
+  <ID>1</ID>
+  <Name>staff_id</Name>
+  <CreateDate>2018/6/22 星期五 14:32:45</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>1</OrderNo>
+  <DisplayName>id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item1>
+
+
+<DataModels_item1_item0_item2_item0_item2>
+  <CTVER>43543230</CTVER>
+  <ID>2</ID>
+  <Name>staff_name</Name>
+  <CreateDate>2018/6/22 星期五 14:32:45</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>2</OrderNo>
+  <DisplayName>姓名</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item2>
+
+
+<DataModels_item1_item0_item2_item0_item3>
+  <CTVER>43543230</CTVER>
+  <ID>3</ID>
+  <Name>staff_tel</Name>
+  <CreateDate>2018/6/22 星期五 14:32:45</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>3</OrderNo>
+  <DisplayName>电话</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item3>
+
+
+<DataModels_item1_item0_item2_item0_item4>
+  <CTVER>43543230</CTVER>
+  <ID>20</ID>
+  <Name>staff_path</Name>
+  <CreateDate>2018/6/22 星期五 14:33:04</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>4</OrderNo>
+  <DisplayName>住址</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item4>
+
+
+<DataModels_item1_item0_item2_item0_item5>
+  <CTVER>43543230</CTVER>
+  <ID>21</ID>
+  <Name>staff_salary</Name>
+  <CreateDate>2018/6/22 星期五 14:33:05</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>5</OrderNo>
+  <DisplayName>工资</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item5>
+
+
+<DataModels_item1_item0_item2_item0_item6>
+  <CTVER>43543230</CTVER>
+  <ID>22</ID>
+  <Name>staff_age</Name>
+  <CreateDate>2018/6/22 星期五 14:33:05</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>6</OrderNo>
+  <DisplayName>年龄</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item6>
+
+
+<DataModels_item1_item0_item2_item0_item7>
+  <CTVER>43543230</CTVER>
+  <ID>23</ID>
+  <Name>staff_sex</Name>
+  <CreateDate>2018/6/22 星期五 14:33:05</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>7</OrderNo>
+  <DisplayName>性别</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item7>
+
+
+<DataModels_item1_item0_item2_item0_item8>
+  <CTVER>43543230</CTVER>
+  <ID>24</ID>
+  <Name>staff_status</Name>
+  <CreateDate>2018/6/22 星期五 14:33:05</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>8</OrderNo>
+  <DisplayName>是否在职</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item8>
+
+
+<DataModels_item1_item0_item2_item0_item9>
+  <CTVER>43543230</CTVER>
+  <ID>25</ID>
+  <Name>staff_check</Name>
+  <CreateDate>2018/6/22 星期五 14:33:05</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>9</OrderNo>
+  <DisplayName>今日是否签到</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item9>
+
+
+<DataModels_item1_item0_item2_item0_item10>
+  <CTVER>43543230</CTVER>
+  <ID>26</ID>
+  <Name>staff_remarks</Name>
+  <CreateDate>2018/6/22 星期五 14:33:05</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>10</OrderNo>
+  <DisplayName>备注</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>1</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item2_item0_item10>
+
+
+<DataModels_item1_item0_item3>
+  <CTVER>43543230</CTVER>
+  <ID>5</ID>
+  <Name>materials_basic</Name>
+  <Caption>建材基础属性</Caption>
+  <CreateDate>2018/6/22 星期五 14:40:27</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>3</OrderNo>
+  <GraphDesc>Left=471.00
+Top=385.00</GraphDesc>
+</DataModels_item1_item0_item3>
+
+
+<DataModels_item1_item0_item3_item0>
+  <Count>6</Count>
+</DataModels_item1_item0_item3_item0>
+
+
+<DataModels_item1_item0_item3_item0_item1>
+  <CTVER>43543230</CTVER>
+  <ID>1</ID>
+  <Name>mat_id</Name>
+  <CreateDate>2018/6/22 星期五 14:40:27</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>1</OrderNo>
+  <DisplayName>id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item3_item0_item1>
+
+
+<DataModels_item1_item0_item3_item0_item2>
+  <CTVER>43543230</CTVER>
+  <ID>2</ID>
+  <Name>mat_name</Name>
+  <CreateDate>2018/6/22 星期五 14:40:27</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>2</OrderNo>
+  <DisplayName>名称</DisplayName>
+  <DataType>1</DataType>
+  <RelateTable>sys_dictionary</RelateTable>
+  <RelateField>dic_id</RelateField>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+  <GraphDesc>P1=874.00,484.00
+P2=771.00,484.00
+P3=771.00,428.00
+P4=668.00,428.00
+HookP1=187.00,99.00
+HookP2=38.00,43.00
+Mod_OP1=1
+Mod_OP2=1
+Mod_CP=0
+Horz1=1
+Horz2=1</GraphDesc>
+</DataModels_item1_item0_item3_item0_item2>
+
+
+<DataModels_item1_item0_item3_item0_item3>
+  <CTVER>43543230</CTVER>
+  <ID>37</ID>
+  <Name>mat_count</Name>
+  <CreateDate>2018/6/22 星期五 14:41:18</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>3</OrderNo>
+  <DisplayName>总数</DisplayName>
+  <DataType>2</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item3_item0_item3>
+
+
+<DataModels_item1_item0_item3_item0_item4>
+  <CTVER>43543230</CTVER>
+  <ID>36</ID>
+  <Name>mat_out</Name>
+  <CreateDate>2018/6/22 星期五 14:40:48</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>4</OrderNo>
+  <DisplayName>借出数</DisplayName>
+  <DataType>2</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item3_item0_item4>
+
+
+<DataModels_item1_item0_item3_item0_item5>
+  <CTVER>43543230</CTVER>
+  <ID>5</ID>
+  <Name>mat_residue</Name>
+  <CreateDate>2018/6/27 星期三 12:38:25</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>5</OrderNo>
+  <DisplayName>剩余数</DisplayName>
+  <DataType>2</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item3_item0_item5>
+
+
+<DataModels_item1_item0_item3_item0_item6>
+  <CTVER>43543230</CTVER>
+  <ID>22</ID>
+  <Name>mat_unit</Name>
+  <CreateDate>2018/6/27 星期三 13:02:31</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>6</OrderNo>
+  <DisplayName>单位</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item3_item0_item6>
+
+
+<DataModels_item1_item0_item4>
+  <CTVER>43543230</CTVER>
+  <ID>7</ID>
+  <Name>lease_record</Name>
+  <Caption>建材租借记录</Caption>
+  <CreateDate>2018/6/22 星期五 14:49:30</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>4</OrderNo>
+  <GraphDesc>Left=352.00
+Top=209.00</GraphDesc>
+</DataModels_item1_item0_item4>
+
+
+<DataModels_item1_item0_item4_item0>
+  <Count>5</Count>
+</DataModels_item1_item0_item4_item0>
+
+
+<DataModels_item1_item0_item4_item0_item1>
+  <CTVER>43543230</CTVER>
+  <ID>1</ID>
+  <Name>lease_id</Name>
+  <CreateDate>2018/6/22 星期五 14:49:30</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>1</OrderNo>
+  <DisplayName>id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item4_item0_item1>
+
+
+<DataModels_item1_item0_item4_item0_item2>
+  <CTVER>43543230</CTVER>
+  <ID>2</ID>
+  <Name>lease_mar</Name>
+  <CreateDate>2018/6/22 星期五 14:49:30</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>2</OrderNo>
+  <DisplayName>建材的编号</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>materials_basic</RelateTable>
+  <RelateField>mat_id</RelateField>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+  <GraphDesc>P1=578.00,385.00
+P2=578.00,348.00
+P3=475.00,348.00
+P4=475.00,311.00
+HookP1=107.00,0.00
+HookP2=123.00,0.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=0
+Horz2=0</GraphDesc>
+</DataModels_item1_item0_item4_item0_item2>
+
+
+<DataModels_item1_item0_item4_item0_item3>
+  <CTVER>43543230</CTVER>
+  <ID>3</ID>
+  <Name>lease_com</Name>
+  <CreateDate>2018/6/22 星期五 14:49:30</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>3</OrderNo>
+  <DisplayName>租借的公司的id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>company_basic</RelateTable>
+  <RelateField>company_id</RelateField>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+  <GraphDesc>P1=281.00,449.00
+P2=316.00,449.00
+P3=316.00,268.00
+P4=352.00,268.00
+HookP1=0.00,67.00
+HookP2=0.00,59.00
+Mod_OP1=0
+Mod_OP2=0
+Mod_CP=0
+Horz1=1
+Horz2=1</GraphDesc>
+</DataModels_item1_item0_item4_item0_item3>
+
+
+<DataModels_item1_item0_item4_item0_item4>
+  <CTVER>43543230</CTVER>
+  <ID>60</ID>
+  <Name>lease_price</Name>
+  <CreateDate>2018/6/22 星期五 14:50:09</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>4</OrderNo>
+  <DisplayName>租借时候的价格</DisplayName>
+  <DataType>3</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item4_item0_item4>
+
+
+<DataModels_item1_item0_item4_item0_item5>
+  <CTVER>43543230</CTVER>
+  <ID>59</ID>
+  <Name>lease_create_time</Name>
+  <CreateDate>2018/6/22 星期五 14:49:56</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>5</OrderNo>
+  <DisplayName>创建时间</DisplayName>
+  <DataType>1</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item4_item0_item5>
+
+
+<DataModels_item1_item0_item5>
+  <CTVER>43543230</CTVER>
+  <ID>8</ID>
+  <Name>lease_capital</Name>
+  <Caption>建材租借流水</Caption>
+  <CreateDate>2018/6/22 星期五 15:06:12</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>5</OrderNo>
+  <GraphDesc>Left=650.00
+Top=212.00</GraphDesc>
+</DataModels_item1_item0_item5>
+
+
+<DataModels_item1_item0_item5_item0>
+  <Count>4</Count>
+</DataModels_item1_item0_item5_item0>
+
+
+<DataModels_item1_item0_item5_item0_item1>
+  <CTVER>43543230</CTVER>
+  <ID>1</ID>
+  <Name>cap_id</Name>
+  <CreateDate>2018/6/22 星期五 15:06:12</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>1</OrderNo>
+  <DisplayName>id</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>1</KeyFieldType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item5_item0_item1>
+
+
+<DataModels_item1_item0_item5_item0_item2>
+  <CTVER>43543230</CTVER>
+  <ID>2</ID>
+  <Name>cap_count</Name>
+  <CreateDate>2018/6/22 星期五 15:06:12</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>2</OrderNo>
+  <DisplayName>租借数量</DisplayName>
+  <DataType>2</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item5_item0_item2>
+
+
+<DataModels_item1_item0_item5_item0_item3>
+  <CTVER>43543230</CTVER>
+  <ID>3</ID>
+  <Name>cap_price</Name>
+  <CreateDate>2018/6/22 星期五 15:06:12</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>3</OrderNo>
+  <DisplayName>租借总价</DisplayName>
+  <DataType>3</DataType>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+</DataModels_item1_item0_item5_item0_item3>
+
+
+<DataModels_item1_item0_item5_item0_item4>
+  <CTVER>43543230</CTVER>
+  <ID>64</ID>
+  <Name>cap_mat</Name>
+  <CreateDate>2018/6/22 星期五 15:06:36</CreateDate>
+  <ModifyDate>1899/12/30 星期六</ModifyDate>
+  <OrderNo>4</OrderNo>
+  <DisplayName>对应建材种类</DisplayName>
+  <DataType>2</DataType>
+  <KeyFieldType>3</KeyFieldType>
+  <RelateTable>lease_record</RelateTable>
+  <RelateField>lease_id</RelateField>
+  <Nullable>0</Nullable>
+  <EditorReadOnly>0</EditorReadOnly>
+  <EditorEnabled>0</EditorEnabled>
+  <GraphDesc>P1=598.00,256.00
+P2=624.00,256.00
+P3=624.00,255.00
+P4=650.00,255.00
+HookP1=169.00,47.00
+HookP2=78.00,43.00
+Mod_OP1=1
+Mod_OP2=1
+Mod_CP=0
+Horz1=1
+Horz2=1</GraphDesc>
+</DataModels_item1_item0_item5_item0_item4>
+
+
+</CTOXML>
