@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhren.Dao.Interface.MaterialsBasicMapper">
+  <resultMap id="BaseResultMap" type="com.yhren.Dao.Bean.MaterialsBasic">
+    <id column="mat_id" jdbcType="INTEGER" property="matId" />
+    <result column="mat_name" jdbcType="VARCHAR" property="matName" />
+    <result column="mat_count" jdbcType="INTEGER" property="matCount" />
+    <result column="mat_out" jdbcType="INTEGER" property="matOut" />
+    <result column="mat_residue" jdbcType="INTEGER" property="matResidue" />
+    <result column="mat_unit" jdbcType="VARCHAR" property="matUnit" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from materials_basic
+    where mat_id = #{matId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yhren.Dao.Bean.MaterialsBasic">
+    insert into materials_basic (mat_id, mat_name, mat_count, 
+      mat_out, mat_residue, mat_unit
+      )
+    values (#{matId,jdbcType=INTEGER}, #{matName,jdbcType=VARCHAR}, #{matCount,jdbcType=INTEGER}, 
+      #{matOut,jdbcType=INTEGER}, #{matResidue,jdbcType=INTEGER}, #{matUnit,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.yhren.Dao.Bean.MaterialsBasic">
+    update materials_basic
+    set mat_name = #{matName,jdbcType=VARCHAR},
+      mat_count = #{matCount,jdbcType=INTEGER},
+      mat_out = #{matOut,jdbcType=INTEGER},
+      mat_residue = #{matResidue,jdbcType=INTEGER},
+      mat_unit = #{matUnit,jdbcType=VARCHAR}
+    where mat_id = #{matId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select mat_id, mat_name, mat_count, mat_out, mat_residue, mat_unit
+    from materials_basic
+    where mat_id = #{matId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select mat_id, mat_name, mat_count, mat_out, mat_residue, mat_unit
+    from materials_basic
+  </select>
+  <resultMap id="BaseResultMap" type="com.yhren.Dao.Bean.MaterialsBasic">
+    <id column="mat_id" jdbcType="INTEGER" property="matId" />
+    <result column="mat_name" jdbcType="VARCHAR" property="matName" />
+    <result column="mat_count" jdbcType="INTEGER" property="matCount" />
+    <result column="mat_out" jdbcType="INTEGER" property="matOut" />
+    <result column="mat_residue" jdbcType="INTEGER" property="matResidue" />
+    <result column="mat_unit" jdbcType="VARCHAR" property="matUnit" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    mat_id, mat_name, mat_count, mat_out, mat_residue, mat_unit
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from materials_basic
+    where mat_id = #{matId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from materials_basic
+    where mat_id = #{matId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yhren.Dao.Bean.MaterialsBasic">
+    insert into materials_basic (mat_id, mat_name, mat_count, 
+      mat_out, mat_residue, mat_unit
+      )
+    values (#{matId,jdbcType=INTEGER}, #{matName,jdbcType=VARCHAR}, #{matCount,jdbcType=INTEGER}, 
+      #{matOut,jdbcType=INTEGER}, #{matResidue,jdbcType=INTEGER}, #{matUnit,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.yhren.Dao.Bean.MaterialsBasic">
+    insert into materials_basic
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="matId != null">
+        mat_id,
+      </if>
+      <if test="matName != null">
+        mat_name,
+      </if>
+      <if test="matCount != null">
+        mat_count,
+      </if>
+      <if test="matOut != null">
+        mat_out,
+      </if>
+      <if test="matResidue != null">
+        mat_residue,
+      </if>
+      <if test="matUnit != null">
+        mat_unit,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="matId != null">
+        #{matId,jdbcType=INTEGER},
+      </if>
+      <if test="matName != null">
+        #{matName,jdbcType=VARCHAR},
+      </if>
+      <if test="matCount != null">
+        #{matCount,jdbcType=INTEGER},
+      </if>
+      <if test="matOut != null">
+        #{matOut,jdbcType=INTEGER},
+      </if>
+      <if test="matResidue != null">
+        #{matResidue,jdbcType=INTEGER},
+      </if>
+      <if test="matUnit != null">
+        #{matUnit,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yhren.Dao.Bean.MaterialsBasic">
+    update materials_basic
+    <set>
+      <if test="matName != null">
+        mat_name = #{matName,jdbcType=VARCHAR},
+      </if>
+      <if test="matCount != null">
+        mat_count = #{matCount,jdbcType=INTEGER},
+      </if>
+      <if test="matOut != null">
+        mat_out = #{matOut,jdbcType=INTEGER},
+      </if>
+      <if test="matResidue != null">
+        mat_residue = #{matResidue,jdbcType=INTEGER},
+      </if>
+      <if test="matUnit != null">
+        mat_unit = #{matUnit,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where mat_id = #{matId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yhren.Dao.Bean.MaterialsBasic">
+    update materials_basic
+    set mat_name = #{matName,jdbcType=VARCHAR},
+      mat_count = #{matCount,jdbcType=INTEGER},
+      mat_out = #{matOut,jdbcType=INTEGER},
+      mat_residue = #{matResidue,jdbcType=INTEGER},
+      mat_unit = #{matUnit,jdbcType=VARCHAR}
+    where mat_id = #{matId,jdbcType=INTEGER}
+  </update>
+</mapper>

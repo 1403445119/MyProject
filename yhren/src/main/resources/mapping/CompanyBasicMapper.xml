@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhren.Dao.Interface.CompanyBasicMapper">
+  <resultMap id="BaseResultMap" type="com.yhren.Dao.Bean.CompanyBasic">
+    <id column="company_id" jdbcType="INTEGER" property="companyId" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="company_path" jdbcType="VARCHAR" property="companyPath" />
+    <result column="company_contacts" jdbcType="VARCHAR" property="companyContacts" />
+    <result column="company_tel" jdbcType="VARCHAR" property="companyTel" />
+    <result column="company_pass" jdbcType="INTEGER" property="companyPass" />
+    <result column="company_create_time" jdbcType="VARCHAR" property="companyCreateTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from company_basic
+    where company_id = #{companyId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yhren.Dao.Bean.CompanyBasic">
+    insert into company_basic (company_id, company_name, company_path, 
+      company_contacts, company_tel, company_pass, 
+      company_create_time)
+    values (#{companyId,jdbcType=INTEGER}, #{companyName,jdbcType=VARCHAR}, #{companyPath,jdbcType=VARCHAR}, 
+      #{companyContacts,jdbcType=VARCHAR}, #{companyTel,jdbcType=VARCHAR}, #{companyPass,jdbcType=INTEGER}, 
+      #{companyCreateTime,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.yhren.Dao.Bean.CompanyBasic">
+    update company_basic
+    set company_name = #{companyName,jdbcType=VARCHAR},
+      company_path = #{companyPath,jdbcType=VARCHAR},
+      company_contacts = #{companyContacts,jdbcType=VARCHAR},
+      company_tel = #{companyTel,jdbcType=VARCHAR},
+      company_pass = #{companyPass,jdbcType=INTEGER},
+      company_create_time = #{companyCreateTime,jdbcType=VARCHAR}
+    where company_id = #{companyId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select company_id, company_name, company_path, company_contacts, company_tel, company_pass, 
+    company_create_time
+    from company_basic
+    where company_id = #{companyId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select company_id, company_name, company_path, company_contacts, company_tel, company_pass, 
+    company_create_time
+    from company_basic
+  </select>
+  <resultMap id="BaseResultMap" type="com.yhren.Dao.Bean.CompanyBasic">
+    <id column="company_id" jdbcType="INTEGER" property="companyId" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="company_path" jdbcType="VARCHAR" property="companyPath" />
+    <result column="company_contacts" jdbcType="VARCHAR" property="companyContacts" />
+    <result column="company_tel" jdbcType="VARCHAR" property="companyTel" />
+    <result column="company_pass" jdbcType="INTEGER" property="companyPass" />
+    <result column="company_create_time" jdbcType="VARCHAR" property="companyCreateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    company_id, company_name, company_path, company_contacts, company_tel, company_pass, 
+    company_create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from company_basic
+    where company_id = #{companyId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from company_basic
+    where company_id = #{companyId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yhren.Dao.Bean.CompanyBasic">
+    insert into company_basic (company_id, company_name, company_path, 
+      company_contacts, company_tel, company_pass, 
+      company_create_time)
+    values (#{companyId,jdbcType=INTEGER}, #{companyName,jdbcType=VARCHAR}, #{companyPath,jdbcType=VARCHAR}, 
+      #{companyContacts,jdbcType=VARCHAR}, #{companyTel,jdbcType=VARCHAR}, #{companyPass,jdbcType=INTEGER}, 
+      #{companyCreateTime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yhren.Dao.Bean.CompanyBasic">
+    insert into company_basic
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="companyId != null">
+        company_id,
+      </if>
+      <if test="companyName != null">
+        company_name,
+      </if>
+      <if test="companyPath != null">
+        company_path,
+      </if>
+      <if test="companyContacts != null">
+        company_contacts,
+      </if>
+      <if test="companyTel != null">
+        company_tel,
+      </if>
+      <if test="companyPass != null">
+        company_pass,
+      </if>
+      <if test="companyCreateTime != null">
+        company_create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="companyId != null">
+        #{companyId,jdbcType=INTEGER},
+      </if>
+      <if test="companyName != null">
+        #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="companyPath != null">
+        #{companyPath,jdbcType=VARCHAR},
+      </if>
+      <if test="companyContacts != null">
+        #{companyContacts,jdbcType=VARCHAR},
+      </if>
+      <if test="companyTel != null">
+        #{companyTel,jdbcType=VARCHAR},
+      </if>
+      <if test="companyPass != null">
+        #{companyPass,jdbcType=INTEGER},
+      </if>
+      <if test="companyCreateTime != null">
+        #{companyCreateTime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yhren.Dao.Bean.CompanyBasic">
+    update company_basic
+    <set>
+      <if test="companyName != null">
+        company_name = #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="companyPath != null">
+        company_path = #{companyPath,jdbcType=VARCHAR},
+      </if>
+      <if test="companyContacts != null">
+        company_contacts = #{companyContacts,jdbcType=VARCHAR},
+      </if>
+      <if test="companyTel != null">
+        company_tel = #{companyTel,jdbcType=VARCHAR},
+      </if>
+      <if test="companyPass != null">
+        company_pass = #{companyPass,jdbcType=INTEGER},
+      </if>
+      <if test="companyCreateTime != null">
+        company_create_time = #{companyCreateTime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where company_id = #{companyId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yhren.Dao.Bean.CompanyBasic">
+    update company_basic
+    set company_name = #{companyName,jdbcType=VARCHAR},
+      company_path = #{companyPath,jdbcType=VARCHAR},
+      company_contacts = #{companyContacts,jdbcType=VARCHAR},
+      company_tel = #{companyTel,jdbcType=VARCHAR},
+      company_pass = #{companyPass,jdbcType=INTEGER},
+      company_create_time = #{companyCreateTime,jdbcType=VARCHAR}
+    where company_id = #{companyId,jdbcType=INTEGER}
+  </update>
+</mapper>

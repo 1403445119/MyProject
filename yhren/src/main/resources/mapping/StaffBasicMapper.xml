@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yhren.Dao.Interface.StaffBasicMapper" >
+  <resultMap id="BaseResultMap" type="com.yhren.Dao.Bean.StaffBasic" >
+    <id column="staff_id" property="staffId" jdbcType="INTEGER" />
+    <result column="staff_name" property="staffName" jdbcType="VARCHAR" />
+    <result column="staff_tel" property="staffTel" jdbcType="VARCHAR" />
+    <result column="staff_path" property="staffPath" jdbcType="VARCHAR" />
+    <result column="staff_salary" property="staffSalary" jdbcType="INTEGER" />
+    <result column="staff_age" property="staffAge" jdbcType="INTEGER" />
+    <result column="staff_sex" property="staffSex" jdbcType="CHAR" />
+    <result column="staff_status" property="staffStatus" jdbcType="INTEGER" />
+    <result column="staff_check" property="staffCheck" jdbcType="INTEGER" />
+    <result column="staff_remarks" property="staffRemarks" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from staff_basic
+    where staff_id = #{staffId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yhren.Dao.Bean.StaffBasic" >
+    insert into staff_basic (staff_id, staff_name, staff_tel, 
+      staff_path, staff_salary, staff_age, 
+      staff_sex, staff_status, staff_check, 
+      staff_remarks)
+    values (#{staffId,jdbcType=INTEGER}, #{staffName,jdbcType=VARCHAR}, #{staffTel,jdbcType=VARCHAR}, 
+      #{staffPath,jdbcType=VARCHAR}, #{staffSalary,jdbcType=INTEGER}, #{staffAge,jdbcType=INTEGER}, 
+      #{staffSex,jdbcType=CHAR}, #{staffStatus,jdbcType=INTEGER}, #{staffCheck,jdbcType=INTEGER}, 
+      #{staffRemarks,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.yhren.Dao.Bean.StaffBasic" >
+    update staff_basic
+    set staff_name = #{staffName,jdbcType=VARCHAR},
+      staff_tel = #{staffTel,jdbcType=VARCHAR},
+      staff_path = #{staffPath,jdbcType=VARCHAR},
+      staff_salary = #{staffSalary,jdbcType=INTEGER},
+      staff_age = #{staffAge,jdbcType=INTEGER},
+      staff_sex = #{staffSex,jdbcType=CHAR},
+      staff_status = #{staffStatus,jdbcType=INTEGER},
+      staff_check = #{staffCheck,jdbcType=INTEGER},
+      staff_remarks = #{staffRemarks,jdbcType=VARCHAR}
+    where staff_id = #{staffId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select staff_id, staff_name, staff_tel, staff_path, staff_salary, staff_age, staff_sex, 
+    staff_status, staff_check, staff_remarks
+    from staff_basic
+    where staff_id = #{staffId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select staff_id, staff_name, staff_tel, staff_path, staff_salary, staff_age, staff_sex, 
+    staff_status, staff_check, staff_remarks
+    from staff_basic
+  </select>
+</mapper>

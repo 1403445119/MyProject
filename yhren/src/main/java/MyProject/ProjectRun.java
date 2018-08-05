@@ -9,9 +9,9 @@ package MyProject;
 //@EnableAutoConfiguration
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan("Dao")
-@ComponentScan("Controller")
-@ComponentScan("Service")
+@MapperScan("com/yhren/Dao")
+@ComponentScan("com.yhren.Controller")
+@ComponentScan("com.yhren.Service")
 public class ProjectRun {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(ProjectRun.class, args);

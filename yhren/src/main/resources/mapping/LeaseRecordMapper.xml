@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yhren.Dao.Interface.LeaseRecordMapper" >
+  <resultMap id="BaseResultMap" type="com.yhren.Dao.Bean.LeaseRecord" >
+    <id column="lease_id" property="leaseId" jdbcType="INTEGER" />
+    <result column="lease_mar" property="leaseMar" jdbcType="INTEGER" />
+    <result column="lease_com" property="leaseCom" jdbcType="INTEGER" />
+    <result column="lease_price" property="leasePrice" jdbcType="DOUBLE" />
+    <result column="lease_create_time" property="leaseCreateTime" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from lease_record
+    where lease_id = #{leaseId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yhren.Dao.Bean.LeaseRecord" >
+    insert into lease_record (lease_id, lease_mar, lease_com, 
+      lease_price, lease_create_time)
+    values (#{leaseId,jdbcType=INTEGER}, #{leaseMar,jdbcType=INTEGER}, #{leaseCom,jdbcType=INTEGER}, 
+      #{leasePrice,jdbcType=DOUBLE}, #{leaseCreateTime,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.yhren.Dao.Bean.LeaseRecord" >
+    update lease_record
+    set lease_mar = #{leaseMar,jdbcType=INTEGER},
+      lease_com = #{leaseCom,jdbcType=INTEGER},
+      lease_price = #{leasePrice,jdbcType=DOUBLE},
+      lease_create_time = #{leaseCreateTime,jdbcType=VARCHAR}
+    where lease_id = #{leaseId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select lease_id, lease_mar, lease_com, lease_price, lease_create_time
+    from lease_record
+    where lease_id = #{leaseId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select lease_id, lease_mar, lease_com, lease_price, lease_create_time
+    from lease_record
+  </select>
+</mapper>
